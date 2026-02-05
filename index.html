@@ -16,6 +16,24 @@
             color: #333;
             background-color: #f4f4f4;
         }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         header {
             background: linear-gradient(135deg, #1a1a1a, #333);
             color: #fff;
@@ -64,6 +82,7 @@
             color: #fff;
             padding-top: 80px;
             overflow: hidden;
+            animation: fadeIn 1.5s ease-out;
         }
         .hero::before {
             content: '';
@@ -124,6 +143,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
         }
         .about {
             background: #fff;
